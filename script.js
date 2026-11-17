@@ -224,6 +224,7 @@
       .from('.beam, .motes', { opacity: 0, duration: 0.6 }, 0.15)
       .from(words('.end h2'), { yPercent: 110, stagger: 0.04, duration: 0.3, ease: 'power3.out' }, 0.35)
       .from('.end p', { y: 20, opacity: 0, stagger: 0.1, duration: 0.25 }, 0.6)
+      .from('.cta', { y: 24, opacity: 0, duration: 0.25, ease: 'back.out(2)' }, 0.75)
       .to({}, { duration: 0.25 });
   });
 
