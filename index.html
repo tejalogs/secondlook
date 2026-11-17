@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Second Look — for the moments that hurt</title>
+  <meta name="description" content="For the moments that hurt, and the doubt that comes after. Write it down the night it happens, and see it clearly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <meta property="og:title" content="Second Look — for the moments that hurt" />
+  <meta property="og:description" content="Write it down the night it happens, and see it clearly." />
+  <meta name="theme-color" content="#1a2132" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231a2132'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='%23e0884a' stroke-width='5'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#read">Skip to the text</a>
+
+  <!-- The plain story. Screen readers read this, and it is the whole page for
+       anyone who turns motion off or if the animation libraries fail to load. -->
+  <article id="read" class="read">
+    <h1>Second Look</h1>
+    <p>For the moments that hurt, and the doubt that comes after.</p>
+    <p>9:15 pm, dinner with friends. In front of everyone: "she can't do anything right." Everyone laughed. So you laughed too. 11:40 pm, a message: "it was a JOKE. relax." You read it again. And again. 1:12 am. Still hearing the laugh. Maybe I just can't take a joke. So you write it down, before you talk yourself out of it.</p>
+    <h2>By morning it'll feel smaller. Write it while it's true.</h2>
+    <p>The sting fades. So does the detail. Every note is marked: written the same night, or later.</p>
+    <h2>Then come the voices. Your first words stay.</h2>
+    <p>You can soften a note the next day. What you wrote the night it happened stays underneath, dated, one tap away.</p>
+    <h2>Then the pattern shows up.</h2>
+    <p>A "joke" about you, in front of others, in 9 of 14 notes. What it means is yours to decide.</p>
+    <p>Noticing isn't overreacting. AI reads, code counts, you decide.</p>
+    <h2>You were there. Trust what you saw.</h2>
+  </article>
+
+  <!-- HUD -->
+  <header class="hud" aria-hidden="true">
+    <span class="pill"><i class="pill__dot"></i>second look</span>
+    <span class="pill hud__crumb">01 · night</span>
+  </header>
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <p class="hint" aria-hidden="true">scroll<i></i></p>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- THE STORY -->
+  <main id="stage" aria-hidden="true">
+
+    <!-- 01 · night: the room where it happened. Scroll pushes into the phone. -->
+    <section class="scene s-night" data-crumb="01 · night">
+      <div class="pin">
+        <svg class="room" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="lampGlow"><stop offset="0" stop-color="#f6b25a" stop-opacity=".55"/><stop offset="1" stop-color="#f6b25a" stop-opacity="0"/></radialGradient>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1322"/><stop offset="1" stop-color="#26324f"/></linearGradient>
+            <radialGradient id="screenGlow"><stop offset="0" stop-color="#f3ecdc" stop-opacity=".5"/><stop offset="1" stop-color="#f3ecdc" stop-opacity="0"/></radialGradient>
+          </defs>
+          <g class="room__all">
+            <rect width="1600" height="900" fill="#1a2132"/>
+            <!-- window -->
+            <g class="depth" data-depth="18"><g class="win">
+              <rect x="980" y="130" width="380" height="440" rx="6" fill="#2b3550"/>
+              <rect x="996" y="146" width="348" height="408" fill="url(#sky)"/>
+              <circle class="moon" cx="1250" cy="250" r="36" fill="#f1e8d3"/>
+              <g class="cloud"><ellipse cx="1080" cy="330" rx="70" ry="16" fill="#3a4766" opacity=".7"/><ellipse cx="1120" cy="318" rx="44" ry="14" fill="#3a4766" opacity=".7"/></g>
+              <rect x="1166" y="146" width="8" height="408" fill="#2b3550"/>
+              <rect x="996" y="346" width="348" height="8" fill="#2b3550"/>
+              <g class="stars" fill="#f1e8d3"><circle cx="1040" cy="190" r="2"/><circle cx="1120" cy="230" r="1.6"/><circle cx="1300" cy="320" r="1.8"/><circle cx="1210" cy="180" r="1.4"/><circle cx="1060" cy="420" r="1.6"/><circle cx="1320" cy="470" r="2"/><circle cx="1140" cy="500" r="1.4"/></g>
+            </g></g>
+            <!-- lamp -->
+            <g class="depth" data-depth="8"><circle class="lamp-glow" cx="380" cy="380" r="330" fill="url(#lampGlow)"/>
+            <rect x="372" y="380" width="10" height="262" fill="#3b3330"/>
+            <ellipse cx="377" cy="642" rx="60" ry="10" fill="#3b3330"/>
+            <path class="lamp-shade" d="M300 380 L454 380 L418 280 L336 280 Z" fill="#e0884a"/></g>
+            <!-- the clock: 7:00, then 7:40, then 9:52 -->
+            <g class="depth" data-depth="12">
+              <circle cx="640" cy="290" r="50" fill="#232b3f" stroke="#3a4560" stroke-width="5"/>
+              <g fill="#5d6a88"><rect x="638" y="246" width="4" height="9"/><rect x="638" y="325" width="4" height="9"/><rect x="596" y="288" width="9" height="4"/><rect x="675" y="288" width="9" height="4"/></g>
+              <line class="hand-h" x1="640" y1="290" x2="640" y2="262" stroke="#d8cdb6" stroke-width="5" stroke-linecap="round"/>
+              <line class="hand-m" x1="640" y1="290" x2="640" y2="252" stroke="#d8cdb6" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="640" cy="290" r="4" fill="#e0884a"/>
+            </g>
+            <!-- table -->
+            <rect y="640" width="1600" height="260" fill="#2a2321"/>
+            <rect y="640" width="1600" height="6" fill="#3d3330"/>
+            <ellipse class="pool" cx="420" cy="660" rx="300" ry="26" fill="#f6b25a" opacity=".16"/>
+            <!-- phone, glowing, face up on a stand -->
+            <g class="phone"><circle class="phone-glow" cx="815" cy="560" r="180" fill="url(#screenGlow)"/>
+            <rect x="752" y="452" width="126" height="196" rx="18" fill="#0f131d"/>
+            <rect class="phone-screen" x="760" y="462" width="110" height="176" rx="12" fill="#ece4d4"/>
+            <g fill="#c9bfa8"><rect x="772" y="482" width="70" height="6" rx="3"/><rect x="772" y="498" width="86" height="6" rx="3"/><rect x="772" y="514" width="56" height="6" rx="3"/><rect x="772" y="538" width="80" height="6" rx="3"/></g></g>
+            <!-- the moment: a message arrives -->
+            <g class="notif">
+              <rect x="700" y="372" width="230" height="58" rx="14" fill="#f7f1e4"/>
+              <text x="716" y="394" font-family="Geist Mono, monospace" font-size="12" fill="#8a8073">11:40 PM · MESSAGE</text>
+              <text x="716" y="417" font-family="Fraunces, serif" font-size="18" fill="#23201d">"it was a JOKE. relax."</text>
+            </g>
+            <!-- plant -->
+            <g class="depth" data-depth="-26"><g class="plant">
+              <path d="M1470 640 C1440 560 1420 520 1380 500" stroke="#55705a" stroke-width="8" fill="none" stroke-linecap="round"/>
+              <path d="M1478 640 C1490 560 1520 520 1560 506" stroke="#4b6650" stroke-width="8" fill="none" stroke-linecap="round"/>
+              <path d="M1474 640 C1470 570 1478 500 1470 450" stroke="#5f7c63" stroke-width="8" fill="none" stroke-linecap="round"/>
+            </g>
+            <path d="M1430 600 L1520 600 L1508 648 L1442 648 Z" fill="#b5654a"/></g>
+          </g>
+        </svg>
+        <div class="vignette"></div>
+        <!-- the voice in your head, one line at a time -->
+        <div class="voices">
+          <p class="voice"><span class="voice__t">9:15 pm · dinner with friends</span>In front of everyone:<br/>"she can't do anything right."</p>
+          <p class="voice">Everyone laughed.<br/>So you laughed too.</p>
+          <p class="voice"><span class="voice__t">11:41 pm</span>You read it again. And again.</p>
+          <p class="voice"><span class="voice__t">1:12 am</span>Still hearing the laugh.</p>
+          <p class="voice">Maybe I just can't take a joke.</p>
+          <p class="voice voice--turn">So you write it down. Before you talk yourself out of it.</p>
+        </div>
+        <div class="wash"></div>
+        <div class="title">
+          <h1>Second Look</h1>
+          <p>for the moments that hurt,<br/>and the doubt that comes after.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · write: inside the phone, the note is written the same night -->
+    <section class="scene s-write paper-scene" data-crumb="02 · write">
+      <div class="pin split">
+        <div class="copy">
+          <h2 class="reveal">By morning it'll feel smaller.<br/><em>Write it while it's true.</em></h2>
+          <p class="reveal">The sting fades. So does the detail. Every note is marked: written the same night, or later.</p>
+        </div>
+        <div class="slip slip--main">
+          <p class="slip__date">Sun 15 Mar · 1:14 am</p>
+          <p class="slip__body type">At dinner, in front of everyone: "she can't do anything right." They all laughed. Later: "it was a joke, relax." Second time this month.</p>
+          <span class="stamp">written the same night</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · keep: next morning, doubt edits the note; the first words stay -->
+    <section class="scene s-keep paper-scene" data-crumb="03 · keep">
+      <div class="pin split">
+        <div class="copy">
+          <h2 class="reveal">Then come the voices.<br/><em>Your first words stay.</em></h2>
+          <p class="reveal">You can soften a note the next day. What you wrote the night it happened stays underneath, dated, one tap away.</p>
+        </div>
+        <div class="slips">
+          <div class="whispers" aria-hidden="true">
+            <span class="whisper w1">you're overreacting</span>
+            <span class="whisper w2">you can't take a joke</span>
+            <span class="whisper w3">that's not what happened</span>
+            <span class="whisper w4">why do you always make it a thing?</span>
+          </div>
+          <div class="slip slip--before">
+            <p class="slip__date">what it said before · 15 Mar, 1:14 am</p>
+            <p class="slip__body">At dinner, in front of everyone: "she can't do anything right." They all laughed. Later: "it was a joke, relax." Second time this month.</p>
+            <span class="stamp stamp--kept">kept</span>
+          </div>
+          <div class="slip slip--front">
+            <p class="slip__date">Sun 15 Mar · <span class="edited">edited 15 Mar, 10:02 am</span></p>
+            <p class="slip__body">At dinner, in front of everyone: "she can't do anything right." <span class="strike">They all laughed.</span> Later: "it was a joke, relax." <span class="strike">Second time this month.</span> <span class="doubt">Maybe I'm overreacting.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · pattern: the notes become a time river; the count is a fact, the meaning is hers -->
+    <section class="scene s-pattern paper-scene" data-crumb="04 · pattern">
+      <div class="pin pattern">
+        <h2 class="reveal pattern__h">Then the pattern <em>shows up.</em></h2>
+        <div class="river">
+          <div class="river__line"></div>
+          <svg class="river__thread" viewBox="0 0 100 80" preserveAspectRatio="none"><path pathLength="1"/></svg>
+          <div class="river__dots"></div>
+          <div class="river__months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span></div>
+          <p class="river__key"><i class="k-solid"></i>written the same day <i class="k-ring"></i>written later</p>
+        </div>
+        <div class="cards">
+          <div class="card card--fact">
+            <p class="card__label">in your notes · Jan–Apr</p>
+            <p class="card__big">A "joke" about you, in front of others, in <b class="count">0</b> of 14 notes.</p>
+          </div>
+          <div class="card card--yours">
+            <p class="card__label">what it means</p>
+            <p class="card__big"><span class="caret"></span> <span class="yours">yours to decide.</span></p>
+          </div>
+        </div>
+        <div class="closing">
+          <p class="rule"><em>Noticing</em> isn't overreacting.</p>
+          <p class="rule-small">AI reads · code counts · you decide</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · morning: back in the room, the light has changed -->
+    <section class="scene s-morning" data-crumb="05 · morning">
+      <div class="pin">
+        <svg class="room room--day" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="daySky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4c98e"/><stop offset="1" stop-color="#fbe9cf"/></linearGradient>
+            <radialGradient id="sunPool"><stop offset="0" stop-color="#fff3d6" stop-opacity=".9"/><stop offset="1" stop-color="#fff3d6" stop-opacity="0"/></radialGradient>
+          </defs>
+          <rect width="1600" height="900" fill="#d9cbb3"/>
+          <rect x="980" y="130" width="380" height="440" rx="6" fill="#bfae92"/>
+          <rect x="996" y="146" width="348" height="408" fill="url(#daySky)"/>
+          <circle class="sun" cx="1120" cy="470" r="54" fill="#fff6e0"/>
+          <rect x="1166" y="146" width="8" height="408" fill="#bfae92"/>
+          <rect x="996" y="346" width="348" height="8" fill="#bfae92"/>
+          <path class="beam" d="M996 146 L1344 146 L900 900 L300 900 Z" fill="url(#sunPool)" opacity=".35"/>
+          <rect x="372" y="380" width="10" height="262" fill="#8a7a6c"/>
+          <ellipse cx="377" cy="642" rx="60" ry="10" fill="#8a7a6c"/>
+          <path d="M300 380 L454 380 L418 280 L336 280 Z" fill="#c9875a"/>
+          <rect y="640" width="1600" height="260" fill="#b59c80"/>
+          <rect y="640" width="1600" height="6" fill="#c7b096"/>
+          <rect x="752" y="560" width="196" height="80" rx="16" fill="#2a2a30" transform="rotate(-4 850 600)"/>
+          <g class="plant">
+            <path d="M1470 640 C1440 560 1420 520 1380 500" stroke="#6e8f70" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M1478 640 C1490 560 1520 520 1560 506" stroke="#66876a" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M1474 640 C1470 570 1478 500 1470 450" stroke="#7a9a7c" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M1470 450 C1462 430 1474 418 1484 426" stroke="#7a9a7c" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </g>
+          <path d="M1430 600 L1520 600 L1508 648 L1442 648 Z" fill="#c4704f"/>
+        </svg>
+        <div class="motes"></div>
+        <div class="wash wash--in"></div>
+        <div class="end">
+          <h2>You were there.<br/><em>Trust what you saw.</em></h2>
+          <p>Second Look · a quiet place to write down what hurt, and see it clearly.</p>        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
